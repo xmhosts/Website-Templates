@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html class="html" lang="en-US" >
+<head>
+
+    <meta name="description" content="Coming Soon">
+    <link rel="icon" type="image/jpg" href="/assets/img/favicon.jpg">
+
+    <link href="//fonts.googleapis.com/css?family=Merriweather:300,700|Open+Sans:700,400&subset=latin,latin-ext" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/assets/css/custom.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css" />
+    
+    <title>Coming Soon</title>
+
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="row">
+                    
+            <h2>Coming Soon</h2>
+            
+
+              <!-- Count Down -->
+              
+              <!-- Display the countdown timer in an element -->
+              <h1 id="countdown"></h1>
+
+              <script>
+              // Set the date we're counting down to
+              var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
+              
+              // Update the count down every 1 second
+              var x = setInterval(function() {
+              
+                // Get today's date and time
+                var now = new Date().getTime();
+              
+                // Find the distance between now and the count down date
+                var distance = countDownDate - now;
+              
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+              
+                // Display the result in the element with id="countdown"
+                document.getElementById("countdown").innerHTML = days + " Days, " + hours + " Hours, "
+                + minutes + " Minutes, " + seconds + " Seconds ";
+              
+                // If the count down is finished, write some text
+                if (distance < 0) {
+                  clearInterval(x);
+                  document.getElementById("countdown").innerHTML = "EXPIRED";
+                }
+              }, 1000);
+              </script>
+
+
+              <br> 
+
+              <a href="https://xmhosting.net">Powered by <strong>XM Labs</strong></a>
+
+          </div>
+        </div>
+    </div>        
+
+</body>
+
+</html>
