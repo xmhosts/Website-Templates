@@ -7,7 +7,10 @@ Free use
 
 **Images of the templates:**
 
+### Profile_Link Website
 
-Profile Link Template: https://i.imgur.com/yxvtyqe.png
+![Profile_Link](https://i.imgur.com/yxvtyqe.png)
 
-Countdown Template: https://i.imgur.com/4LlvPbq.png
+### Coming Soon Template
+
+![Profile_Link](https://i.imgur.com/4LlvPbq.png)
